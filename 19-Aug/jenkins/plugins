@@ -17,3 +17,9 @@ https://help.sonatype.com/integrations/nexus-and-continuous-integration/nexus-pl
 6> git: Git
 
 7> with crdential: Bind credential to variables    ---> To securly add password to jenkins
+
+8> Ansible plugin
+
+9> Credentials Plugin
+
+10> 
