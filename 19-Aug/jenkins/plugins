@@ -8,4 +8,12 @@ https://help.sonatype.com/integrations/nexus-and-continuous-integration/nexus-pl
 
 2> Stash: stash some files to be used later in the build
 
-3> unstash: 
+3> unstash: Restore files previously stashed.
+
+4> sshagent: SSH agent
+
+5> sh: shell script
+
+6> git: Git
+
+7> with crdential: Bind credential to variables    ---> To securly add password to jenkins
