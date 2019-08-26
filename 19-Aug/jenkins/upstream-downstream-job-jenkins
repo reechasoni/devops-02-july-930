@@ -1,0 +1,16 @@
+In Pipeline style
+
+node{
+    stage('job1'){
+        echo "this is our job1"
+    }
+    stage('job2'){
+    build job: 'upstream-downstream-job2', propagate: false    
+    }
+}
+
+
+Plugins Used: 
+build : Build a job
+
+
