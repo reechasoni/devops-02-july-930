@@ -1,0 +1,31 @@
+Tomcat Installation :
+
+$ sudo yum list | grep java-1.8.0
+
+$ sudo yum install java-1.8.0-openjdk -y
+
+$ java -version
+
+$ cd /opt/
+
+$ sudo wget http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.45/bin/apache-tomcat-8.5.45.tar.gz
+
+$ sudo tar xf apache-tomcat-8.5.45.tar.gz
+
+$ sudo rm apache-tomcat-8.5.45.tar.gz
+ 
+$ sudo mv apache-tomcat-8.5.45/ tomcat8
+
+$ sudo chown -R ec2-user:ec2-user tomcat8/
+
+$ cd tomcat8/bin
+
+To Start the Tomcat Service
+
+$ ./startup.sh
+
+To Stop the Tomcat Service
+
+$ ./shutdown.sh
+
+
