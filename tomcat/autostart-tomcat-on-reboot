@@ -1,0 +1,34 @@
+$ cd /etc/init.d
+
+$ sudo vi tomcat8
+
+##############PASTE THE BELOW CONTENT###############
+#!/bin/bash
+# description: Tomcat Start Stop Restart  
+# processname: tomcat  
+# chkconfig: 234 20 80
+CATALINA_HOME=/opt/tomcat8
+case $1 in  
+start)  
+sh $CATALINA_HOME/bin/startup.sh  
+;;   
+stop)     
+sh $CATALINA_HOME/bin/shutdown.sh  
+;;   
+restart)  
+sh $CATALINA_HOME/bin/shutdown.sh  
+sh $CATALINA_HOME/bin/startup.sh  
+;;   
+esac      
+exit 0 
+
+#################################################
+
+$ sudo chmod 755 tomcat8
+
+$ sudo chkconfig --add tomcat8
+
+$ sudo chkconfig tomcat8 on
+
+$ sudo service tomcat8 start
+
