@@ -23,6 +23,7 @@ Setup kubernetes cluster on 10 servers.
 3. You do not have to learn new scripting language to work with Ansible
 4. Ansible Playbooks(Scripts) are written in YAML
 5. Ansible is opensource
+6. It has inbuilt ssh (so, it is more secure).
 
 ### Other competetive Configuration management tools
 
